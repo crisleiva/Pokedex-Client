@@ -1,0 +1,93 @@
+nav {
+  background-color: #ccc;
+  height: 100px;
+  min-width: 100vw;
+}
+
+nav a {
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  /* padding: 30px 0 0; */
+  font-size: 1.1em;
+  border-top: 2px solid #222;
+}
+
+nav a:first-child {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 7px;
+  border-left: 2px solid #222;
+}
+
+nav a:last-child {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 7px;
+  border-right: 2px solid #222;
+}
+nav a {
+  border-left: 2px solid #222;
+}
+
+nav a:link, nav a:active, nav a:visited {
+  background-color: #777;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.pokeball {
+  width: 35px;
+  height: 35px;
+  margin: 15px auto;
+  background-image: url("https://i.imgur.com/pd4oouc.png");
+  background-size: contain;
+}
+
+/* nav a:hover {
+  background-color: #fff;
+} */
+
+.home-link {
+  border-bottom: 10px solid #3e69ab;
+}
+
+.home-link:hover  {
+  background-color: #3e69ab;
+}
+
+.home-link:hover .pokeball {
+  background-image: url("https://i.imgur.com/0zLy4N5.png");
+  background-size: contain;
+}
+
+.all-pokemon-link {
+  border-bottom: 10px solid #f8cb46;
+}
+
+.all-pokemon-link:hover {
+  background-color: #f8cb46;
+}
+
+.all-pokemon-link:hover .pokeball {
+  background-image: url("https://i.imgur.com/MrjnfX2.png");
+  background-size: contain;
+}
+
+.user-pokemon-link {
+  border-bottom: 10px solid #ea3223;
+}
+
+.user-pokemon-link:hover {
+  background-color: #ea3223;
+}
+
+.user-pokemon-link:hover .pokeball {
+  background-image: url("https://i.imgur.com/Ilwip40.png");
+  background-size: contain;
+}

@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import Nav from './components/Nav'
+import Footer from './components/Footer'
+import { BrowserRouter } from 'react-router-dom';
 import PokedexContainer from './containers/PokedexContainer'
-import './App.css';
+import './style/App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav />
-        <PokedexContainer />
+        <BrowserRouter>
+          <Nav />
+          <PokedexContainer />
+          <Footer />
+        </BrowserRouter>
       </div>
     );
   }
