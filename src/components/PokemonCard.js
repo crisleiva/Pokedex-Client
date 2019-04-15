@@ -9,7 +9,7 @@ const PokemonCard = props => {
         <Grid.Column>
           <Segment>
             <h1>{props.pokemon.name}</h1>
-            <Image src={getImage}/>
+            <Image onClick={(e) => props.handleClick(props.pokemon)} src={getImage}/>
           </Segment>
         </Grid.Column>
       </Grid.Row>
