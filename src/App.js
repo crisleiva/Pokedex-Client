@@ -4,7 +4,7 @@ import PokedexContainer from './containers/PokedexContainer'
 import Signup from './components/Signup'
 import Login from './components/Login'
 import {Route, Switch, Link, withRouter} from 'react-router-dom'
-import './App.css'
+import './style/App.css'
 
 class App extends Component {
   state = {
@@ -54,7 +54,7 @@ class App extends Component {
     e.preventDefault()
     fetch('http://localhost:3000/login', {
       method: 'POST',
-      headers: { 
+      headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
