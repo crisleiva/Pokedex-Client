@@ -17,9 +17,10 @@ class PokedexContainer extends React.Component {
     return this.state.pokemons.map(pokemon => <PokemonCard pokemon={pokemon}/>)
   }
   render () {
-   
+    const banner = <img src='https://www.freeiconspng.com/uploads/pokemon-png-23.png' />
     return (
       <div>
+        {banner}
         {this.setPokemon()}
       </div>
     )
