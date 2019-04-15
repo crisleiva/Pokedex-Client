@@ -1,17 +1,40 @@
+#pokemon-container {
+  background: url('https://i.imgur.com/Dd7XUwe.jpg') repeat;
+}
+
 #banner {
-  border-bottom: 2px solid #777;
+  border-bottom: 10px solid #d84331;
+  background-color: #fff;
 }
 
 #pokemon-container-cards {
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
-  width: 960px;
+  width: 890px;
   margin: auto;
-  border-left: 2px solid #777;
-  border-right: 2px solid #777;
+  border-left: 10px solid #f8cd46;
+  border-right: 10px solid #f8cd46;
+}
+
+#pokemon-container-cards a {
+  color: #444;
+  text-decoration: none;
+}
+
+#pokemon-container-cards a:hover {
+  color: #888;
+}
+
+.pokemon-cards:hover {
+  background-color: #f8cd46;
+  border: 2px solid #f8cd46;
 }
 
 .pokemon-cards {
-  width: 200px;
-  margin: auto;
+  width: 180px;
+  margin: 20px auto;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
