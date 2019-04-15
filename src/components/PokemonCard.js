@@ -1,12 +1,19 @@
 import React from 'react'
-
+import { Grid, Image, Segment } from 'semantic-ui-react'
 const PokemonCard = props => {
+  console.log(props.pokemon)
+  const getImage = require(`../../sprites/sprites/pokemon/${props.pokemon.id}.png`)
   return (
-    <div>
-      <h1></h1>
-      <p></p>
-      <image></image>
-    </div>
+    <Grid stackable columns={3}>
+      <Grid.Row>
+        <Grid.Column>
+          <Segment>
+            <h1>{props.pokemon.name}</h1>
+            <Image src={getImage}/>
+          </Segment>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
   )
 } 
 
