@@ -3,6 +3,8 @@ import logo from './logo.svg'
 import PokedexContainer from './containers/PokedexContainer'
 import Signup from './components/Signup'
 import Login from './components/Login'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 import {Route, Switch, Link, withRouter} from 'react-router-dom'
 import './style/App.css'
 
@@ -80,12 +82,14 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
+      <Nav />
       <Switch>
         <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
         <Route path={'/pokedex'} render={() => <PokedexContainer/>}/>
         <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
         <Route path={'/'} />
       </Switch>
+      <Footer />
       </div>
     )
   }

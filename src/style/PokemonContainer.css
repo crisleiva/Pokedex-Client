@@ -1,0 +1,17 @@
+#banner {
+  border-bottom: 2px solid #777;
+}
+
+#pokemon-container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: auto;
+  border-left: 2px solid #777;
+  border-right: 2px solid #777;
+}
+
+.pokemon-cards {
+  width: 200px;
+  margin: auto;
+}

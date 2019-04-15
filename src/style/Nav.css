@@ -1,7 +1,9 @@
 nav {
-  background-color: #ccc;
+  background-color: #fff;
   height: 100px;
   min-width: 100vw;
+  border-bottom: 2px solid #777;
+  border-top: 2px solid #777;
 }
 
 nav a {
@@ -9,8 +11,7 @@ nav a {
   width: 130px;
   height: 100px;
   text-align: center;
-  /* padding: 30px 0 0; */
-  font-size: 1.1em;
+  font-size: .95em;
   border-top: 2px solid #222;
 }
 
@@ -30,7 +31,7 @@ nav a {
 }
 
 nav a:link, nav a:active, nav a:visited {
-  background-color: #777;
+  background-color: #383838;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -44,7 +45,7 @@ nav a:hover {
 .pokeball {
   width: 35px;
   height: 35px;
-  margin: 15px auto;
+  margin: 15px auto 17px;
   background-image: url("https://i.imgur.com/pd4oouc.png");
   background-size: contain;
 }
@@ -53,41 +54,54 @@ nav a:hover {
   background-color: #fff;
 } */
 
-.home-link {
-  border-bottom: 10px solid #3e69ab;
-}
-
-.home-link:hover  {
-  background-color: #3e69ab;
-}
-
-.home-link:hover .pokeball {
-  background-image: url("https://i.imgur.com/0zLy4N5.png");
+.pokeball {
   background-size: contain;
 }
 
-.all-pokemon-link {
+#home-link {
+  border-bottom: 10px solid #3974f6;
+}
+
+#home-link:hover  {
+  background-color: #3974f6;
+}
+
+#home-link:hover .pokeball {
+  background-image: url("https://i.imgur.com/0zLy4N5.png");
+}
+
+#all-pokemon-link {
   border-bottom: 10px solid #f8cb46;
 }
 
-.all-pokemon-link:hover {
+#all-pokemon-link:hover {
   background-color: #f8cb46;
 }
 
-.all-pokemon-link:hover .pokeball {
+#all-pokemon-link:hover .pokeball {
   background-image: url("https://i.imgur.com/MrjnfX2.png");
-  background-size: contain;
 }
 
-.user-pokemon-link {
+#user-pokemon-link {
   border-bottom: 10px solid #ea3223;
 }
 
-.user-pokemon-link:hover {
+#user-pokemon-link:hover {
   background-color: #ea3223;
 }
 
-.user-pokemon-link:hover .pokeball {
+#user-pokemon-link:hover .pokeball {
   background-image: url("https://i.imgur.com/Ilwip40.png");
-  background-size: contain;
+}
+
+#signup-link {
+  border-bottom: 10px solid #90c457;
+}
+
+#signup-link:hover {
+  background-color: #90c457;
+}
+
+#signup-link:hover .pokeball {
+  background-image: url("https://i.imgur.com/U4a6514.png");
 }
