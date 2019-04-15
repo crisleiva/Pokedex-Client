@@ -4,7 +4,7 @@ import PokedexContainer from './containers/PokedexContainer'
 import Signup from './components/Signup'
 import Login from './components/Login'
 import {Route, Switch, Link, withRouter} from 'react-router-dom'
-import './App.css'
+import './style/App.css'
 
 class App extends Component {
   state = {
@@ -45,7 +45,7 @@ class App extends Component {
         user: userData.user
       }, () => {
         localStorage.setItem("token", userData.jwt)
-        console.log('After signup', this.state.user)
+        this.props.history.push('/pokedex')
       })
     })
   }
@@ -65,7 +65,7 @@ class App extends Component {
       localStorage.setItem('token', userData.jwt)
       this.setState({
         user: userData.user
-      }, () => console.log('After Login', this.state.user))
+      }, () => this.props.history.push('/pokedex'))
     })
   }
 
@@ -82,6 +82,7 @@ class App extends Component {
       <div className='App'>
       <Switch>
         <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
+        <Route path={'/pokedex'} render={() => <PokedexContainer/>}/>
         <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
         <Route path={'/'} />
       </Switch>
