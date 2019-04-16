@@ -1,19 +1,22 @@
 import React from 'react'
-import { Grid, Image, Segment } from 'semantic-ui-react'
-const PokedexCard = props => {
+import { Image } from 'semantic-ui-react'
+const PokemonCard = props => {
+
+  const capitalize = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
   console.log(props.pokemon)
   const getImage = require(`../../sprites/sprites/pokemon/${props.pokemon.id}.png`)
   return (
-    <Grid stackable columns={3}>
-      <Grid.Row>
-        <Grid.Column>
-          <Segment>
-            <h1>{props.pokemon.name}</h1>
-            <Image onClick={(e) => props.handleClick(props.pokemon)} src={getImage}/>
-          </Segment>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+
+    <a href={props.pokemon.name} className="pokemon-card-link">
+      <div className="pokemon-cards">
+        <h3>{capitalize(props.pokemon.name)}</h3>
+        <Image src={getImage}/>
+      </div>
+    </a>
+
   )
 }
 

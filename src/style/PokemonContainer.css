@@ -3,8 +3,20 @@
 }
 
 #banner {
-  border-bottom: 10px solid #d84331;
+  border-bottom: 3px solid #d84331;
   background-color: #fff;
+  /* background-image: linear-gradient(#fff, #d84331); */
+}
+
+#banner img {
+  margin: 30px 0 20px;
+  width: 600px;
+}
+
+#banner h1 {
+  font-size: 2.3em;
+  margin-bottom: 40px;
+  color: #f8cd46;
 }
 
 #pokemon-container-cards {
@@ -26,15 +38,23 @@
   color: #888;
 }
 
-.pokemon-cards:hover {
-  background-color: #f8cd46;
-  border: 2px solid #f8cd46;
+#pokedex {
+
+}
+
+.pokemon-card-link {
+  margin: 20px auto;
 }
 
 .pokemon-cards {
   width: 180px;
-  margin: 20px auto;
   background-color: #eee;
   border: 2px solid #ccc;
   border-radius: 5px;
+}
+
+
+.pokemon-cards:hover {
+  background-color: #f8cd46;
+  border: 2px solid #f8cd46;
 }

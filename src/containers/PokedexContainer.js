@@ -3,6 +3,7 @@ import PokemonAdapter from '../adapters/PokemonAdapter'
 import PokemonCard from '../components/PokemonCard'
 import UserTeam from '../components/UserTeam'
 import '../style/pokedex.css'
+import '../style/PokemonContainer.css'
 import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
   state = {
@@ -50,15 +51,24 @@ class PokedexContainer extends React.Component {
   // }
 
   render () {
-    const banner = <img src='https://i.imgur.com/EWZkHfO.png' />
+    const banner = <img src='https://i.imgur.com/EWZkHfO.png' alt="Pokemon"/>
     return (
       <div id="pokemon-container">
         <div id="banner">
-        {banner}
-        <div className='pokedex'>
-          {this.setPokemon()}
-          <Route path={'/usersteam'} render={() => <UserTeam/>}/>
+          {banner}
+        <h1>
+          Digital Pokedex
+        </h1>
+
         </div>
+
+        <div id="pokemon-container-cards">
+
+            {this.setPokemon()}
+            <Route path={'/usersteam'} render={() => <UserTeam/>}/>
+          
+        </div>
+
       </div>
     </div>
     )
