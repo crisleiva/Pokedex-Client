@@ -10,9 +10,7 @@ import '../style/PokemonContainer.css'
 import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
   state = {
-    pokemons: [],
-    searchTerm: '',
-    clicked: true
+    pokemons: []
   }
 
   componentDidMount = () => {
@@ -27,6 +25,7 @@ class PokedexContainer extends React.Component {
   setPokemon = () => {
     return this.state.pokemons.map(pokemon => <PokedexCard key={pokemon.id} pokemon={pokemon}/>)
   }
+
 
 
   handleChange = (e) => {

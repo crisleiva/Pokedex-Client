@@ -81,11 +81,12 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <Nav />
+        <Nav user={this.state.user} handleLogOut={this.handleLogOut}/>
         <Switch>
-          <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
+      
           <Route exact path={'/pokedex/:name'} component={PokemonCard} />
-          <Route path={'/pokedex'} render={() => <PokedexContainer user={this.state.user}/>}/>
+          <Route path={'/pokedex'} render={() => <PokedexContainer user={this.state.user}/>}/> 
+          <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
           <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
           <Route path={'/'} render={() => <PokedexContainer user={this.state.user}/>}/>
         </Switch>
