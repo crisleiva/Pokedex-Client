@@ -30,7 +30,7 @@ const Footer = (props) => {
 
         <div id="footer-right" className="footer-cols">
           <h3>Created By:</h3>
-          <h4>Cristian Leiva</h4><h4>Amos Shin</h4>
+          <h4><a href='https://github.com/cristianlava'>Cristian Leiva</a></h4><h4><a href='https://github.com/amoshin91'>Amos Shin</a></h4>
 
         </div>
       </div>
