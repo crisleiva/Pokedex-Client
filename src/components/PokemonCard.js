@@ -50,15 +50,17 @@ class PokemonCard extends React.Component {
   }
   render () {
     const getImage = require(`../../sprites/sprites/pokemon/${this.props.location.state.id}.png`)
-    console.log('After comp', this.props.location.state.id)
+    console.log('After comp', this.props)
     return (
       <div className="pokemon-container">
         <div className="pokedex">
           <div className="pokedex-image">
-            <img src={getImage} alt=""/>
-            <p>
-              {this.props.location.state.id}
-            </p>
+            <div className="">
+              <img src={getImage} alt=""/>
+              <p>
+                {this.props.location.state.id}
+              </p>
+            </div>
           </div>
           <div className="pokedex-info">
             <h1 className="pokedex-info-elements">{this.capitalizeHabitat(this.props.match.params.name)}</h1>

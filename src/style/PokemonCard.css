@@ -14,21 +14,24 @@
 }
 
 .pokedex-image {
-  width: 45%;
-  padding-top: 110px;
-  height: 300px;
-  margin: 30px auto 0;
+  width: 257px;
+  height: 252px;
+  margin: 155px 58px 0;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background: url('https://i.imgur.com/RvksFPu.gif') no-repeat;
+  background-size: cover;
 }
 
 .pokedex-image img {
   width: 230px;
   height: 230px;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .pokedex-image p {
-  margin-top: 148px;
-  margin-right: 37px;
+  margin-top: 126px;
+  margin-right: 31px;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
   font-size: 1.3em;
