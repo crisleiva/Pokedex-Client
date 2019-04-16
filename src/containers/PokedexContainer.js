@@ -3,13 +3,16 @@ import PokemonAdapter from '../adapters/PokemonAdapter'
 import PokedexCard from '../components/PokedexCard'
 import UserTeam from '../components/UserTeam'
 import PokemonCard from '../components/PokemonCard'
+import Search from '../components/Search'
 import '../style/pokedex.css'
 import '../style/App.css'
 import '../style/PokemonContainer.css'
 import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
   state = {
-    pokemons: []
+    pokemons: [],
+    searchTerm: '',
+    clicked: true
   }
 
   componentDidMount = () => {
@@ -22,11 +25,19 @@ class PokedexContainer extends React.Component {
   }
 
   setPokemon = () => {
-    return this.state.pokemons.map(pokemon => <PokedexCard key={pokemon.id} pokemon={pokemon} handleClick={this.handleUserPoke}/>)
+    return this.state.pokemons.map(pokemon => <PokedexCard key={pokemon.id} pokemon={pokemon}/>)
   }
 
 
+  handleChange = (e) => {
+    this.setState({
+      searchTerm: e.target.value
+    })
+  }
 
+  filterPoke = () => {
+    this.state.pokemons.filter(poke => poke.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+  }
   //We're going to implement this after MVP
   // setUsersPokemon = (pokeObj) => {
   //   console.log(pokeObj)
