@@ -1,6 +1,7 @@
 import React from 'react'
 import '../style/App.css'
 import '../style/PokemonCard.css'
+import PokemonAdapter from '../adapters/PokemonAdapter'
 
 import { Link } from 'react-router-dom'
 import { Image } from 'semantic-ui-react'
@@ -10,7 +11,8 @@ class PokemonCard extends React.Component {
   state = {
     pokeHabitat: '',
     enFlavor: '',
-    evolId: 0
+    evolId: 0,
+    pokemons: ''
   }
   createPokeCard = (habitat, text) => {
     console.log(habitat, text)
@@ -35,7 +37,8 @@ class PokemonCard extends React.Component {
       this.setState({
         pokeHabitat,
         enFlavor
-      })
+      },() => console.log(parsedJson))
+
       const pokeUrl = parsedJson.evolution_chain.url
       fetch(pokeUrl)
       .then(res => res.json())
@@ -45,9 +48,14 @@ class PokemonCard extends React.Component {
 
     })
   }
+
+
+
   componentDidMount() {
     this.handleUserPoke()
+
   }
+
   render () {
     const getImage = require(`../../sprites/sprites/pokemon/${this.props.location.state.id}.png`)
     console.log('After comp', this.props)
