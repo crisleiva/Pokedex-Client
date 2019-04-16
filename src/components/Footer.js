@@ -11,9 +11,11 @@ const Footer = (props) => {
           <h3>
             Pokédex
           </h3>
-          <Link to='/pokedex'>Home</Link>
-          <Link to='/PokemonCard'>All Pokemon</Link>
-          <Link to='/UserTeam'>Your Team</Link>
+          <Link to='/'>Home</Link>
+          <Link to='/pokedex'>All Pokemon</Link>
+          <Link to='/usersteam'>Your Team</Link>
+          <Link to='/login'>Login</Link>
+          <Link to='/signup'>Create an Account</Link>
         </div>
 
         <div id="footer-center" className="footer-cols">

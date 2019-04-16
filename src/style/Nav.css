@@ -1,9 +1,14 @@
+header {
+  height: 100px;
+  background: url('http://i.imgur.com/O7ZWigt.png') 50% 61%;
+  background-size: cover;
+  padding-top: 100px;
+}
+
 nav {
-  background-color: #fff;
   height: 100px;
   min-width: 100vw;
   border-bottom: 2px solid #777;
-  border-top: 2px solid #777;
 }
 
 nav a {
@@ -17,13 +22,13 @@ nav a {
 
 nav a:first-child {
   border-bottom-left-radius: 20px;
-  border-top-left-radius: 7px;
+  border-top-left-radius: 20px;
   border-left: 2px solid #222;
 }
 
 nav a:last-child {
   border-bottom-right-radius: 20px;
-  border-top-right-radius: 7px;
+  border-top-right-radius: 20px;
   border-right: 2px solid #222;
 }
 nav a {
@@ -56,6 +61,7 @@ nav a:hover {
 
 #home-link {
   border-bottom: 10px solid #3974f6;
+  border-top: 5px solid #3974f6;
 }
 
 #home-link:hover  {
@@ -68,6 +74,7 @@ nav a:hover {
 
 #all-pokemon-link {
   border-bottom: 10px solid #f8cb46;
+  border-top: 5px solid #f8cb46;
 }
 
 #all-pokemon-link:hover {
@@ -80,6 +87,7 @@ nav a:hover {
 
 #user-pokemon-link {
   border-bottom: 10px solid #ea3223;
+  border-top: 5px solid #ea3223;
 }
 
 #user-pokemon-link:hover {
@@ -92,6 +100,7 @@ nav a:hover {
 
 #signup-link {
   border-bottom: 10px solid #90c457;
+  border-top: 5px solid #90c457;
 }
 
 #signup-link:hover {
