@@ -23,13 +23,13 @@ nav a {
 nav a:first-child {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  border-left: 2px solid #222;
+  border-left: 3px solid #3974f6;
 }
 
 nav a:last-child {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  border-right: 2px solid #222;
+  border-right: 3px solid #90c457;
 }
 nav a {
   border-left: 2px solid #222;
