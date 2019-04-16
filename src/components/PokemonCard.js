@@ -9,12 +9,14 @@ const PokemonCard = props => {
   console.log(props.pokemon)
   const getImage = require(`../../sprites/sprites/pokemon/${props.pokemon.id}.png`)
   return (
+
     <a href={props.pokemon.name} className="pokemon-card-link">
       <div className="pokemon-cards">
         <h3>{capitalize(props.pokemon.name)}</h3>
         <Image src={getImage}/>
       </div>
     </a>
+
   )
 }
 
