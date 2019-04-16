@@ -35,6 +35,10 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   display: flex;
 }
 
+#footer-left, #footer-right {
+  padding-top: 15px;
+}
+
 #footer-left a {
   display: block;
   margin-bottom: 2px;
@@ -55,7 +59,12 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   display: flex;
   margin: auto;
   width: 80%;
-  margin-top: 90px;
+  margin-top: 50px;
+}
+
+#footer-logo {
+  width: 70%;
+  margin-top: 5px;
 }
 
 #left-pokeball {

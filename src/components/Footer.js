@@ -16,7 +16,7 @@ const Footer = (props) => {
         </div>
 
         <div id="footer-center" className="footer-cols">
-          <h1>Pokedex</h1>
+          <img src="https://i.imgur.com/EWZkHfO.png" id="footer-logo" alt="pokemon"/>
           <div id="footer-pokeball-container">
             <div id="left-pokeball" className="footer-pokeballs"></div>
             <div id="center-pokeball" className="footer-pokeballs"></div>

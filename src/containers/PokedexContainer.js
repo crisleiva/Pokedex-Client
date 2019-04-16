@@ -18,11 +18,14 @@ class PokedexContainer extends React.Component {
     return this.state.pokemons.map(pokemon => <PokemonCard pokemon={pokemon}/>)
   }
   render () {
-    const banner = <img src='https://i.imgur.com/EWZkHfO.png' />
+    const banner = <img src='https://i.imgur.com/EWZkHfO.png' alt="Pokemon"/>
     return (
       <div id="pokemon-container">
         <div id="banner">
         {banner}
+        <h1>
+          Digital Pokedex
+        </h1>
         </div>
         <div id="pokemon-container-cards">
           {this.setPokemon()}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import PokedexContainer from './containers/PokedexContainer'
 import Signup from './components/Signup'
 import Login from './components/Login'
