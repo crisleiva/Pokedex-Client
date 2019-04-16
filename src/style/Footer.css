@@ -1,5 +1,5 @@
 footer {
-  height: 200px;
+  height: 250px;
   background-color: #1e1e1e;
   border-top: 7px solid #444;
   border-bottom: 15px solid #333;
@@ -23,7 +23,7 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 .footer-cols {
   width: 33%;
   border-right: 2px solid #000;
-  min-height: 160px;
+  min-height: 180px;
 }
 .footer-cols:last-child {
   border: none;
@@ -59,7 +59,7 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   display: flex;
   margin: auto;
   width: 80%;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 #footer-logo {
@@ -81,4 +81,20 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 
 #right-pokeball {
   background-image: url("https://i.imgur.com/Ilwip40.png");
+}
+
+#footer-right h3 {
+  margin: 45px 0 10px;
+  font-size: 1em;
+}
+
+#footer-right h4 {
+  font-size: .9em;
+  font-weight: 400;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+#footer-right h4:last-child {
+  border-left: 1px solid #777;
 }

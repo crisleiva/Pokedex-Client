@@ -29,6 +29,9 @@ const Footer = (props) => {
         </div>
 
         <div id="footer-right" className="footer-cols">
+          <h3>Created By:</h3>
+          <h4>Cristian Leiva</h4><h4>Amos Shin</h4>
+
         </div>
       </div>
     </footer>

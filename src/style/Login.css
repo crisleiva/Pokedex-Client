@@ -1,7 +1,7 @@
 #login-container {
   min-height: 40vh;
   padding: 140px 0;
-  background: url('https://i.imgur.com/Dd7XUwe.jpg') repeat;
+  background: linear-gradient(#fffc, #fffc), url('https://i.imgur.com/Dd7XUwe.jpg') repeat;
 }
 
 #login-link-container {
