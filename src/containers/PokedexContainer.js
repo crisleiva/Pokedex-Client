@@ -52,9 +52,17 @@ class PokedexContainer extends React.Component {
         <div id="banner">
           {banner}
         <h1>
-          Digital Pokedex
+          Digital Pokèdex
         </h1>
-
+        </div>
+        <div id="banner-border-container">
+          <div id="banner-border-white">
+            <div id="banner-border">
+              <h3 id="pokedex-header">
+                All Pokèmon
+              </h3>
+            </div>
+          </div>
         </div>
 
         <div id="pokemon-container-cards">

@@ -34,7 +34,7 @@ nav a {
   border-left: 2px solid #222;
 }
 
-nav a:link, nav a:active, nav a:visited {
+nav a:link, nav a:visited {
   background-color: #383838;
   color: #fff;
   text-decoration: none;
@@ -45,6 +45,7 @@ nav a:link, nav a:active, nav a:visited {
 nav a:hover {
   color: #000;
 }
+
 
 .pokeball {
   width: 35px;
@@ -108,4 +109,9 @@ nav a:hover {
 
 #signup-link:hover .pokeball {
   background-image: url("https://i.imgur.com/U4a6514.png");
+}
+
+#home-link:active, #all-pokemon-link:active, #user-pokemon-link:active, #signup-link:active {
+  background-image: linear-gradient(#fff4, #fff4);
+  border-image: linear-gradient(#fff4, #fff4);
 }

@@ -20,6 +20,14 @@
   font-weight: 800;
 }
 
+#pokedex-header {
+  margin: 0;
+  padding-top: 33px;
+  font-size: 1.9em;
+  color: #333;
+  font-weight: 900;
+}
+
 #pokemon-container-cards {
   background-color: #fff;
   display: flex;
@@ -28,7 +36,7 @@
   margin: auto;
   border-left: 10px solid #f8cd46;
   border-right: 10px solid #f8cd46;
-  padding-bottom: 40px;
+  padding: 10px 0 40px;
 }
 
 #pokemon-container-cards h3 {
@@ -65,3 +73,36 @@
   background-color: #f8cd46;
   border: 2px solid #f8cd46;
 }
+
+#image {
+  z-index: 2;
+  position: relative;
+}
+
+#banner-border-container {
+  background-color: #c3de86;
+  height: 66px;
+}
+
+#banner-border-white {
+  width: 910px;
+  background-color: #fff;
+  /* height: 66px; */
+  margin: auto;
+}
+
+#banner-border {
+  background-image: url('https://i.imgur.com/crE0F5w.png');
+  height: 66px;
+}
+
+/* #banner-bottom {
+  width: 910px;
+  margin: auto;
+  text-align: left;
+  float: left;
+}
+
+#banner-bottom img {
+  width: 70px;
+} */
