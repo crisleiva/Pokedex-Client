@@ -3,7 +3,7 @@
 }
 
 #banner {
-  border-bottom: 7px solid #bce179;
+  border-bottom: 7px solid #aa0000;
   background-color: #87ab74;
   /* background-image: linear-gradient(#fff, #d84331); */
 }
@@ -80,8 +80,9 @@
 }
 
 #banner-border-container {
-  background-color: #c3de86;
-  height: 66px;
+  background-color: #aa0000;
+  height: 63px;
+  border-bottom: 3px solid #000;
 }
 
 #banner-border-white {
@@ -92,7 +93,7 @@
 }
 
 #banner-border {
-  background-image: url('https://i.imgur.com/crE0F5w.png');
+  background-image: url('https://i.imgur.com/NC9625A.jpg');
   height: 66px;
 }
 
