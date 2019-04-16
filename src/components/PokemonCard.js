@@ -1,8 +1,7 @@
 import React from 'react'
 import '../style/App.css'
-import { Link } from 'react-router-dom'
-import { Image } from 'semantic-ui-react'
-const PokemonCard = props => {
+// import { Link } from 'react-router-dom'
+// import { Image } from 'semantic-ui-react'
 
 class PokemonCard extends React.Component {
 
@@ -17,7 +16,7 @@ class PokemonCard extends React.Component {
     console.log('After comp', this.props.location.state.id)
     return (
       <div>
-        <img src={getImage} />
+        <img src={getImage} alt=""/>
         {this.props.match.params.name}
       </div>
     )

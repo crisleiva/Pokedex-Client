@@ -1,9 +1,9 @@
 #pokemon-container {
-  background: linear-gradient(#fffc, #fffc), url('https://i.imgur.com/Dd7XUwe.jpg') repeat;
+  background: url('https://i.imgur.com/QVPsYBX.jpg') repeat;
 }
 
 #banner {
-  border-bottom: 7px solid #aa0000;
+  border-bottom: 3px solid #000;
   background-color: #87ab74;
   /* background-image: linear-gradient(#fff, #d84331); */
 }
@@ -62,16 +62,175 @@
 
 .pokemon-cards {
   width: 180px;
-  background: url('https://i.imgur.com/9B607k4.gif') no-repeat 0px -20px #89b57e;
-  background-size: cover;
-  border: 2px solid #ccc;
   border-radius: 5px;
+  background: url('https://i.imgur.com/RvksFPu.gif') no-repeat  #89b57e;
+  background-size: cover;
+  transition: .3s;
 }
 
 
 .pokemon-cards:hover {
-  background-color: #f8cd46;
-  border: 2px solid #f8cd46;
+  transition: .3s;
+  /* background-color: #f8cd46;
+  border: 2px solid #f8cd46; */
+}
+
+.fire {
+  border: 4px solid #f01717;
+  color: #fff;
+  background: url('https://i.imgur.com/O3VIwQd.gif') no-repeat 0px -10px;
+  background-size: cover;
+}
+
+.fire:hover {
+  color: #ccc;
+  border-left: 15px solid #f01717;
+  border-right: 15px solid #f01717;
+}
+
+.grass {
+  border: 4px solid #b0e46a;
+  background: url('https://i.imgur.com/RvksFPu.gif') no-repeat  #89b57e;
+  background-size: cover;
+}
+
+.grass:hover {
+  background-color: #b0e46a;
+  border-left: 15px solid #b0e46a;
+  border-right: 15px solid #b0e46a;
+}
+
+.bug {
+  border: 4px solid #b0e46a;
+  background: url('https://i.imgur.com/TCM186V.gif') no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.bug:hover {
+  background-color: #b0e46a;
+  border-left: 15px solid #b0e46a;
+  border-right: 15px solid #b0e46a;
+}
+
+.water {
+  border: 4px solid #00f;
+  background: url('https://i.imgur.com/Uq4eCYK.gif') no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.water:hover {
+  border-left: 15px solid #00f;
+  border-right: 15px solid #00f;
+}
+
+.electric {
+  border: 4px solid #ff0;
+  background: url('https://i.imgur.com/sU48KBj.gif') no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.electric:hover {
+  background-color: #ff0;
+  border-left: 15px solid #ff0;
+  border-right: 15px solid #ff0;
+}
+
+.poison {
+  background: url('https://i.imgur.com/8SpriMv.gif') no-repeat;
+  background-size: cover;
+  color: #fff;
+  border: 4px solid #e334e3;
+}
+
+.poison:hover {
+  border-left: 15px solid #e334e3;
+  border-right: 15px solid #e334e3;
+}
+
+.ghost {
+  border: 4px solid #f0f;
+  color: #fff;
+  background: url('https://i.imgur.com/csjOSAL.gif') no-repeat;
+  background-size: cover;
+}
+
+.ghost:hover {
+  border-left: 15px solid #f0f;
+  border-right: 15px solid #f0f;
+}
+
+.psychic {
+  border: 4px solid #f0f;
+  background: url('https://i.imgur.com/MnN9NH4.gif') no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.psychic:hover {
+  border-left: 15px solid #f0f;
+  border-right: 15px solid #f0f;
+}
+
+.normal {
+  border: 4px solid #999;
+  background: url('https://i.imgur.com/8zOuRjc.gif') no-repeat;
+  background-size: cover;
+}
+
+.normal:hover {
+  border-left: 15px solid #999;
+  border-right: 15px solid #999;
+}
+
+.ground, .rock, .fighting {
+  border: 4px solid brown;
+  color: #fff;
+  background: url('https://i.imgur.com/z9Lz17l.png') no-repeat;
+  background-size: cover;
+}
+
+.ground:hover, .rock:hover, .fighting:hover {
+  background-color: brown;
+  border-left: 15px solid brown;
+  border-right: 15px solid brown;
+}
+
+.fairy {
+  border: 4px solid #aaa;
+}
+
+.fairy:hover {
+  background-color: #aaa;
+  border-left: 15px solid #aaa;
+  border-right: 15px solid #aaa;
+}
+
+.ice {
+  border: 4px solid #aaf;
+  background: url('https://i.imgur.com/tvOS2fo.gif') no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.ice:hover {
+  background-color: #aaf;
+  border-left: 15px solid #aaf;
+  border-right: 15px solid #aaf;
+}
+
+.dragon {
+  border: 4px solid orange;
+  background: url('https://i.imgur.com/K20gNoW.gif') no-repeat;
+  background-size: cover;
+}
+
+.dragon:hover {
+  background-color: orange;
+  border-left: 15px solid orange;
+  border-right: 15px solid orange;
 }
 
 #image {
@@ -80,20 +239,21 @@
 }
 
 #banner-border-container {
-  background-color: #aa0000;
+  background-color: #ad1718;
+  padding-top: 12px;
   height: 63px;
   border-bottom: 3px solid #000;
 }
 
 #banner-border-white {
   width: 910px;
-  background-color: #fff;
+  /* background-color: #fff; */
   /* height: 66px; */
   margin: auto;
 }
 
 #banner-border {
-  background-image: url('https://i.imgur.com/NC9625A.jpg');
+  background-image: url('https://i.imgur.com/qnCp90K.png');
   height: 66px;
 }
 

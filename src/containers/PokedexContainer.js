@@ -25,7 +25,7 @@ class PokedexContainer extends React.Component {
     return this.state.pokemons.map(pokemon => <PokedexCard key={pokemon.id} pokemon={pokemon} handleClick={this.handleUserPoke}/>)
   }
 
-  
+
 
   //We're going to implement this after MVP
   // setUsersPokemon = (pokeObj) => {

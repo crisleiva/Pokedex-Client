@@ -4,7 +4,7 @@ import Signup from './components/Signup'
 import Login from './components/Login'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import {Route, Switch, Link, withRouter} from 'react-router-dom'
+import {Route, Switch, withRouter} from 'react-router-dom'
 import './style/App.css'
 import PokemonCard from './components/PokemonCard';
 class App extends Component {

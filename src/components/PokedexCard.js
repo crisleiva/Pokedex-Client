@@ -18,7 +18,7 @@ const PokedexCard = props => {
         }
       }}
       className='pokemon-card-link'>
-      <div className='pokemon-cards'>
+      <div className={`pokemon-cards ${props.pokemon.poke_type}`}>
         <h3>{capitalize(props.pokemon.name)}</h3>
         <Image src={getImage} />
       </div>
