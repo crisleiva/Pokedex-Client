@@ -7,7 +7,7 @@ import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
   state = {
     pokemons: [],
-    usersPoke: []
+    currentPokeDesc: []
   }
 
   componentDidMount = () => {
@@ -15,34 +15,40 @@ class PokedexContainer extends React.Component {
     .then(pokeJson => {
       this.setState({
         pokemons: pokeJson
-      }, () => console.log(this.state))
+      })
     })
   }
 
   setPokemon = () => {
-    return this.state.pokemons.map(pokemon => <PokemonCard pokemon={pokemon} handleClick={this.setUsersPokemon}/>)
+    return this.state.pokemons.map(pokemon => <PokemonCard pokemon={pokemon} handleClick={this.handleUserPoke}/>)
   }
-  handleUserPoke = () => {
-
-  }
-
-  setUsersPokemon = (pokeObj) => {
-    console.log(pokeObj)
-    fetch(`http://localhost:3000/users/${this.props.user.id}`, {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        user: {
-          user_pokemons: pokeObj
-        }
-      })
-    })
+  handleUserPoke = pokeObj => {
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeObj.id}`)
     .then(res => res.json())
-    .then(console.log)
+    .then(parsedJson => {
+      debugger
+    })
   }
+
+  //We're going to implement this after MVP
+  // setUsersPokemon = (pokeObj) => {
+  //   console.log(pokeObj)
+  //   fetch(`http://localhost:3000/users/${this.props.user.id}`, {
+  //     method: 'PATCH',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       user: {
+  //         user_pokemons: pokeObj
+  //       }
+  //     })
+  //   })
+  //   .then(res => res.json())
+  //   .then(console.log)
+  // }
+
   render () {
     const banner = <img src='https://i.imgur.com/EWZkHfO.png' />
     return (
@@ -54,6 +60,7 @@ class PokedexContainer extends React.Component {
           <Route path={'/usersteam'} render={() => <UserTeam/>}/>
         </div>
       </div>
+    </div>
     )
   }
 }

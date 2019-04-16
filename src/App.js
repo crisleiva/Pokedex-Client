@@ -7,7 +7,6 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import {Route, Switch, Link, withRouter} from 'react-router-dom'
 import './style/App.css'
-import Nav from './components/Nav'
 class App extends Component {
   state = {
     user: {}

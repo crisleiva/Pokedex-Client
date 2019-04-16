@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Image, Segment } from 'semantic-ui-react'
-const PokemonCard = props => {
+const PokedexCard = props => {
   console.log(props.pokemon)
   const getImage = require(`../../sprites/sprites/pokemon/${props.pokemon.id}.png`)
   return (
