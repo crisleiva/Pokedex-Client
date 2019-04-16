@@ -1,14 +1,14 @@
 import React from 'react'
 import PokemonAdapter from '../adapters/PokemonAdapter'
-import PokemonCard from '../components/PokemonCard'
+import PokedexCard from '../components/PokedexCard'
 import UserTeam from '../components/UserTeam'
+import PokemonCard from '../components/PokemonCard'
 import '../style/pokedex.css'
 import '../style/PokemonContainer.css'
 import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
   state = {
-    pokemons: [],
-    currentPokeDesc: []
+    pokemons: []
   }
 
   componentDidMount = () => {
@@ -21,21 +21,16 @@ class PokedexContainer extends React.Component {
   }
 
   setPokemon = () => {
-    return this.state.pokemons.map(pokemon => <PokemonCard pokemon={pokemon} handleClick={this.handleUserPoke}/>)
+    return this.state.pokemons.map(pokemon => <PokedexCard key={pokemon.id} pokemon={pokemon} handleClick={this.handleUserPoke}/>)
   }
-  handleUserPoke = pokeObj => {
-    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeObj.id}`)
-    .then(res => res.json())
-    .then(parsedJson => {
-      debugger
-    })
-  }
+
+  
 
   //We're going to implement this after MVP
   // setUsersPokemon = (pokeObj) => {
   //   console.log(pokeObj)
   //   fetch(`http://localhost:3000/users/${this.props.user.id}`, {
-  //     method: 'PATCH',
+  //     method: 'POST',
   //     headers: {
   //       'Content-Type': 'application/json',
   //       'Accept': 'application/json'
@@ -51,6 +46,7 @@ class PokedexContainer extends React.Component {
   // }
 
   render () {
+    console.log('After Render:', this.state.pokemons)
     const banner = <img src='https://i.imgur.com/EWZkHfO.png' alt="Pokemon"/>
     return (
       <div id="pokemon-container">
@@ -63,16 +59,13 @@ class PokedexContainer extends React.Component {
         </div>
 
         <div id="pokemon-container-cards">
-
-            {this.setPokemon()}
-            <Route path={'/usersteam'} render={() => <UserTeam/>}/>
-          
+          {this.setPokemon()}
         </div>
 
       </div>
-    </div>
     )
   }
 }
+
 
 export default PokedexContainer

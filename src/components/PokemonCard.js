@@ -1,23 +1,23 @@
 import React from 'react'
-import { Image } from 'semantic-ui-react'
-const PokemonCard = props => {
 
-  const capitalize = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+class PokemonCard extends React.Component {
+
+  handleUserPoke = () => {
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${this.props.location.state.id}`)
+    .then(res => res.json())
+    .then(console.log)
   }
 
-  console.log(props.pokemon)
-  const getImage = require(`../../sprites/sprites/pokemon/${props.pokemon.id}.png`)
-  return (
-
-    <a href={props.pokemon.name} className="pokemon-card-link">
-      <div className="pokemon-cards">
-        <h3>{capitalize(props.pokemon.name)}</h3>
-        <Image src={getImage}/>
+  render () {
+    const getImage = require(`../../sprites/sprites/pokemon/${this.props.location.state.id}.png`)
+    console.log('After comp', this.props.location.state.id)
+    return (
+      <div>
+        <img src={getImage} />
+        {this.props.match.params.name}
       </div>
-    </a>
-
-  )
+    )
+  }
 }
 
 export default PokemonCard
