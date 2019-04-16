@@ -178,6 +178,8 @@
   border: 4px solid #999;
   background: url('https://i.imgur.com/8zOuRjc.gif') no-repeat;
   background-size: cover;
+  /* transform: scaleX(-1);
+  filter: flipH; */
 }
 
 .normal:hover {

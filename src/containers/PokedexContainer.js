@@ -30,6 +30,7 @@ class PokedexContainer extends React.Component {
 
 
   handleChange = (e) => {
+    e.preventDefault()
     this.setState({
       searchTerm: e.target.value
     })

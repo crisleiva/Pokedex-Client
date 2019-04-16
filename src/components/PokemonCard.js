@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style/App.css'
+import '../style/PokemonCard.css'
 
 import { Link } from 'react-router-dom'
 import { Image } from 'semantic-ui-react'
@@ -47,18 +48,24 @@ class PokemonCard extends React.Component {
   componentDidMount() {
     this.handleUserPoke()
   }
-
   render () {
     const getImage = require(`../../sprites/sprites/pokemon/${this.props.location.state.id}.png`)
     console.log('After comp', this.props.location.state.id)
     return (
-      <div>
-
-        <img src={getImage} alt=""/>
-        <h1>{this.capitalizeHabitat(this.props.match.params.name)}</h1>
-        <h3>{this.capitalizeHabitat(this.state.pokeHabitat)}</h3>
-        <p>{this.state.enFlavor}</p>
-
+      <div className="pokemon-container">
+        <div className="pokedex">
+          <div className="pokedex-image">
+            <img src={getImage} alt=""/>
+            <p>
+              {this.props.location.state.id}
+            </p>
+          </div>
+          <div className="pokedex-info">
+            <h1 className="pokedex-info-elements">{this.capitalizeHabitat(this.props.match.params.name)}</h1>
+            <h3 className="pokedex-info-elements">{this.capitalizeHabitat(this.state.pokeHabitat)}</h3>
+            <p className="pokedex-info-elements">{this.state.enFlavor}</p>
+          </div>
+        </div>
       </div>
     )
   }
