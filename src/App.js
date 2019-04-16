@@ -6,6 +6,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import {Route, Switch, Link, withRouter} from 'react-router-dom'
 import './style/App.css'
+import PokemonCard from './components/PokemonCard';
 class App extends Component {
   state = {
     user: {}
@@ -83,6 +84,7 @@ class App extends Component {
         <Nav />
         <Switch>
           <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
+          <Route exact path={'/pokedex/:name'} component={PokemonCard} />
           <Route path={'/pokedex'} render={() => <PokedexContainer user={this.state.user}/>}/>
           <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
           <Route path={'/'} render={() => <PokedexContainer user={this.state.user}/>}/>
