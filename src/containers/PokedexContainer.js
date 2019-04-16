@@ -10,9 +10,7 @@ import '../style/PokemonContainer.css'
 import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
   state = {
-    pokemons: [],
-    searchTerm: '',
-    clicked: true
+    pokemons: []
   }
 
   componentDidMount = () => {
@@ -28,33 +26,6 @@ class PokedexContainer extends React.Component {
     return this.state.pokemons.map(pokemon => <PokedexCard key={pokemon.id} pokemon={pokemon}/>)
   }
 
-  handleChange = (e) => {
-    this.setState({
-      searchTerm: e.target.value
-    })
-  }
-
-  filterPoke = () => {
-    this.state.pokemons.filter(poke => poke.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
-  }
-  //We're going to implement this after MVP
-  // setUsersPokemon = (pokeObj) => {
-  //   console.log(pokeObj)
-  //   fetch(`http://localhost:3000/users/${this.props.user.id}`, {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //     },
-  //     body: JSON.stringify({
-  //       user: {
-  //         user_pokemons: pokeObj
-  //       }
-  //     })
-  //   })
-  //   .then(res => res.json())
-  //   .then(console.log)
-  // }
 
   render () {
     console.log('After Render:', this.state.pokemons)
