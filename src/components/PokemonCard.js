@@ -1,4 +1,5 @@
 import React from 'react'
+import '../style/App.css'
 import { Image } from 'semantic-ui-react'
 const PokemonCard = props => {
 

@@ -3,6 +3,7 @@ import PokemonAdapter from '../adapters/PokemonAdapter'
 import PokemonCard from '../components/PokemonCard'
 import UserTeam from '../components/UserTeam'
 import '../style/pokedex.css'
+import '../style/App.css'
 import '../style/PokemonContainer.css'
 import {Route, Switch, Link} from 'react-router-dom'
 class PokedexContainer extends React.Component {
@@ -60,7 +61,7 @@ class PokedexContainer extends React.Component {
 
             {this.setPokemon()}
             <Route path={'/usersteam'} render={() => <UserTeam/>}/>
-          
+
         </div>
 
       </div>
