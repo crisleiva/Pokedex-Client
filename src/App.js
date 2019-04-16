@@ -85,7 +85,7 @@ class App extends Component {
           <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
           <Route path={'/pokedex'} render={() => <PokedexContainer user={this.state.user}/>}/>
           <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
-          <Route path={'/'} />
+          <Route path={'/'} render={() => <PokedexContainer user={this.state.user}/>}/>
         </Switch>
         <Footer />
       </div>
