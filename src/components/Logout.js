@@ -5,6 +5,12 @@ class Logout extends React.Component{
     this.props.handleLogOut()
   }
 
+  render () {
+    return(
+      <div>Home</div>
+
+    )
+  }
 }
 
 export default Logout
