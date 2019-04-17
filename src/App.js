@@ -11,7 +11,7 @@ import './style/App.css'
 import PokemonCard from './components/PokemonCard';
 class App extends Component {
   state = {
-    user: {}
+    currentUser: {}
   }
 
   componentDidMount = () => {
@@ -26,7 +26,7 @@ class App extends Component {
       .then( res => res.json())
       .then(userJson => {
         this.setState({
-          user: userJson.user
+          currentUser: userJson.user
         })
       })
     }
@@ -45,7 +45,7 @@ class App extends Component {
     .then(res => res.json())
     .then(userData => {
       this.setState({
-        user: userData.user
+        currentUser: userData.user
       }, () => {
         localStorage.setItem("token", userData.jwt)
         this.props.history.push('/pokedex')
@@ -67,7 +67,7 @@ class App extends Component {
     .then(userData => {
       localStorage.setItem('token', userData.jwt)
       this.setState({
-        user: userData.user
+        currentUser: userData.user
       }, () => this.props.history.push('/pokedex'))
     })
   }
@@ -83,12 +83,12 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <Nav user={this.state.user} handleLogOut={this.handleLogOut}/>
+        <Nav currentUser={this.state.currentUser} handleLogOut={this.handleLogOut}/>
         <Switch>
-          <Route exact path={'/pokedex/:name'} component={PokemonCard} />
-          <Route path={'/pokedex'} render={() => <PokedexContainer user={this.state.user}/>}/> 
           <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
           <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
+          <Route exact path={'/pokedex/:name'} component={PokemonCard} />
+          <Route path={'/pokedex'} render={() => <PokedexContainer currentUser={this.state.currentUser}/>}/> 
           <Route path={'/logout'} render={() => <Logout handleLogOut={this.handleLogOut}/>} />
           <Route path={'/'} component={Home}/>
         </Switch>
