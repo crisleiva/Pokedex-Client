@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=VT323');
 
 .pokemon-container {
   padding: 60px 0 50px;
@@ -84,30 +84,40 @@
 
 .pokedex-image p {
   margin: 0 31px 0 0;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'VT323', monospace;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 .pokedex-info {
   width: 45%;
   height: 317px;
-  margin: 140px auto 0;
-  font-family: 'IBM Plex Mono', monospace;
+  margin: 140px 0 0 40px;
+  font-family: 'VT323', monospace;
   overflow: scroll;
   /* color: #fff; */
 }
 
 .pokedex-info p {
-  font-size: .9em;
+  font-size: 1.2em;
   text-align: left;
   text-indent: 15px;
-  padding-left: 80px;
-  margin-top: 20px;
+  /* padding-left: 80px; */
+  margin: 20px auto 0;
+  width: 225px;
+}
+
+.pokedex-info h1 {
+  font-size: 2.7em;
+  with: 225px;
+}
+
+.pokedex-info h3 {
+  font-size: 1.8em;
 }
 
 .pokedex-info-elements {
-  padding: 0 40px 0 70px;
+  /* padding: 0 40px 0 70px; */
 }
 
 
