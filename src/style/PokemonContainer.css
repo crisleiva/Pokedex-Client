@@ -66,116 +66,138 @@
   background: url('https://i.imgur.com/RvksFPu.gif') no-repeat  #89b57e;
   background-size: cover;
   transition: .3s;
+  border-style: solid;
+  border-width: 4px;
 }
 
 
 .pokemon-cards:hover {
   transition: .3s;
+  border-width: 4px 18px;
   /* background-color: #f8cd46;
   border: 2px solid #f8cd46; */
 }
 
 .fire {
-  border: 4px solid #f01717;
+  border-color: #f01717;
   color: #fff;
   background: url('https://i.imgur.com/O3VIwQd.gif') no-repeat 0px -10px;
   background-size: cover;
 }
 
 .fire:hover {
-  color: #ccc;
-  border-left: 15px solid #f01717;
-  border-right: 15px solid #f01717;
+  color: #f01717;
+  text-shadow:
+    -1px 1px 0 #0003,
+    1px -1px 0 #0003,
+    -1px -1px 0 #0003,
+    1px 1px 0 #0003;
 }
 
 .grass {
-  border: 4px solid #b0e46a;
+  border-color: #b0e46a;
   background: url('https://i.imgur.com/RvksFPu.gif') no-repeat  #89b57e;
   background-size: cover;
 }
 
 .grass:hover {
-  background-color: #b0e46a;
-  border-left: 15px solid #b0e46a;
-  border-right: 15px solid #b0e46a;
+  color: #b0e46a;
+  text-shadow:
+    -1px 1px 0 #0003,
+    1px -1px 0 #0003,
+    -1px -1px 0 #0003,
+    1px 1px 0 #0003;
 }
 
 .bug {
-  border: 4px solid #b0e46a;
+  border-color: #b0e46a;
   background: url('https://i.imgur.com/TCM186V.gif') no-repeat;
   background-size: cover;
   color: #fff;
 }
 
 .bug:hover {
-  background-color: #b0e46a;
-  border-left: 15px solid #b0e46a;
-  border-right: 15px solid #b0e46a;
+  color: #b0e46a;
+  text-shadow:
+    -1px 1px 0 #0003,
+    1px -1px 0 #0003,
+    -1px -1px 0 #0003,
+    1px 1px 0 #0003;
 }
 
 .water {
-  border: 4px solid #00f;
+  border-color: #00f;
   background: url('https://i.imgur.com/Uq4eCYK.gif') no-repeat;
   background-size: cover;
   color: #fff;
 }
 
 .water:hover {
-  border-left: 15px solid #00f;
-  border-right: 15px solid #00f;
+  color: #00f;
+  text-shadow:
+    -1px 1px 0 #fff3,
+    1px -1px 0 #fff3,
+    -1px -1px 0 #fff3,
+    1px 1px 0 #fff3;
 }
 
 .electric {
-  border: 4px solid #ff0;
+  border-color: #ff0;
   background: url('https://i.imgur.com/sU48KBj.gif') no-repeat;
   background-size: cover;
   color: #fff;
 }
 
 .electric:hover {
-  background-color: #ff0;
-  border-left: 15px solid #ff0;
-  border-right: 15px solid #ff0;
+  color: #ff0;
+  text-shadow:
+    -1px 1px 0 #0003,
+    1px -1px 0 #0003,
+    -1px -1px 0 #0003,
+    1px 1px 0 #0003;
 }
 
 .poison {
   background: url('https://i.imgur.com/8SpriMv.gif') no-repeat;
   background-size: cover;
   color: #fff;
-  border: 4px solid #e334e3;
+  border-color: #e334e3;
 }
 
 .poison:hover {
-  border-left: 15px solid #e334e3;
-  border-right: 15px solid #e334e3;
+  color: #e334e3;
+  text-shadow:
+    -1px 1px 0 #0006,
+    1px -1px 0 #0006,
+    -1px -1px 0 #0006,
+    1px 1px 0 #0006;
 }
 
 .ghost {
-  border: 4px solid #f0f;
+  border-color: #f0f;
   color: #fff;
   background: url('https://i.imgur.com/csjOSAL.gif') no-repeat;
   background-size: cover;
 }
 
-.ghost:hover {
-  border-left: 15px solid #f0f;
-  border-right: 15px solid #f0f;
-}
-
 .psychic {
-  border: 4px solid #f0f;
+  border-color: #f0f;
   background: url('https://i.imgur.com/MnN9NH4.gif') no-repeat;
   background-size: cover;
   color: #fff;
 }
 
-.psychic:hover {
-  border-left: 15px solid #f0f;
-  border-right: 15px solid #f0f;
+.ghost:hover, .psychic:hover {
+  color: #f0f;
+  text-shadow:
+    -1px 1px 0 #0006,
+    1px -1px 0 #0006,
+    -1px -1px 0 #0006,
+    1px 1px 0 #0006;
 }
 
 .normal {
-  border: 4px solid #999;
+  border-color: #999;
   background: url('https://i.imgur.com/8zOuRjc.gif') no-repeat;
   background-size: cover;
   /* transform: scaleX(-1);
@@ -183,56 +205,47 @@
 }
 
 .normal:hover {
-  border-left: 15px solid #999;
-  border-right: 15px solid #999;
+  color: #999;
 }
 
 .ground, .rock, .fighting {
-  border: 4px solid brown;
+  border-color: brown;
   color: #fff;
   background: url('https://i.imgur.com/z9Lz17l.png') no-repeat;
   background-size: cover;
 }
 
 .ground:hover, .rock:hover, .fighting:hover {
-  background-color: brown;
-  border-left: 15px solid brown;
-  border-right: 15px solid brown;
+  color: brown;
 }
 
 .fairy {
-  border: 4px solid #aaa;
+  border-color: #aaa;
 }
 
 .fairy:hover {
-  background-color: #aaa;
-  border-left: 15px solid #aaa;
-  border-right: 15px solid #aaa;
+  color: #aaa;
 }
 
 .ice {
-  border: 4px solid #aaf;
+  border-color: #aaf;
   background: url('https://i.imgur.com/tvOS2fo.gif') no-repeat;
   background-size: cover;
   color: #fff;
 }
 
 .ice:hover {
-  background-color: #aaf;
-  border-left: 15px solid #aaf;
-  border-right: 15px solid #aaf;
+  color: #aaf;
 }
 
 .dragon {
-  border: 4px solid orange;
+  border-color: orange;
   background: url('https://i.imgur.com/K20gNoW.gif') no-repeat;
   background-size: cover;
 }
 
 .dragon:hover {
-  background-color: orange;
-  border-left: 15px solid orange;
-  border-right: 15px solid orange;
+  color: orange;
 }
 
 #image {
