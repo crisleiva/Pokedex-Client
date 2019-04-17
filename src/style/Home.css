@@ -1,18 +1,80 @@
 .home-card {
-  width: 30%;
-  margin: auto;
-  height: 400px;
+  width: 45%;
+  margin: 50px auto 30px;
+  height: 200px;
 }
+
 
 .home-card-text-container {
   padding: 6px 20px 0;
   height: 130px;
 }
 
-.home-card-text-container:first-child {
-  background-color: #47e;
+.home-card-text-container h3 {
+  margin: 0;
 }
 
-.home-card-text-container:last-child {
-  background-color: #9bc166;
+.home-card {
+  border-radius: 20px;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+}
+#pokemon-container-cards a {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: #000;
+}
+#pokemon-container-cards a:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+#home-signup {
+  background-color: #f1cb5f;
+  width: 45%;
+  height: 340px;
+  color: #fff;
+}
+
+#home-login {
+
+}
+
+#home-signup:hover {
+  color: #ccc;
+}
+
+.home-card img {
+  width: 100%;
+}
+
+.home-card:last-child {
+  /* background-color: #9bc166; */
+  background-color: #9f2822;
+  width: 45%;
+  height: 340px;
+  color: #fff;
 }

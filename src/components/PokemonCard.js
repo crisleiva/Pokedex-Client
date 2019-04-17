@@ -15,7 +15,7 @@ class PokemonCard extends React.Component {
   }
 
   scrollToTop = () => {
-    window.scrollTo(0,180)
+    window.scrollTo(0,85)
   }
 
   componentWillMount = () => {

@@ -24,11 +24,11 @@ const Home = props => {
       </div>
 
       <div id="pokemon-container-cards">
-        <Link to='/signup' className="home-card large">
-          <img src="" alt="" />
+        <Link to='/signup' className="home-card" id="home-signup">
+          <img src="https://i.imgur.com/l0b0RGG.jpg" alt="signup" />
           <div class="home-card-text-container">
             <h3>
-              Create a New Account
+              Join our team!
             </h3>
             <p>
               Want to see the pokèdex? Create an account!
@@ -37,8 +37,8 @@ const Home = props => {
         </Link>
 
 
-          <Link to='/login' className="home-card large">
-            <img src="" alt="" />
+          <Link to='/login' className="home-card" id="home-login">
+            <img src="https://i.imgur.com/gse3OY0.jpg" alt="login" />
             <div class="home-card-text-container">
               <h3>
                 Already have an account?
