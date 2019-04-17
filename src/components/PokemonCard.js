@@ -11,8 +11,7 @@ class PokemonCard extends React.Component {
   state = {
     pokeHabitat: '',
     enFlavor: '',
-    evolId: 0,
-    pokemons: ''
+    evolId: 0
   }
   createPokeCard = (habitat, text) => {
     console.log(habitat, text)
@@ -38,14 +37,6 @@ class PokemonCard extends React.Component {
         pokeHabitat,
         enFlavor
       },() => console.log(parsedJson))
-
-      const pokeUrl = parsedJson.evolution_chain.url
-      fetch(pokeUrl)
-      .then(res => res.json())
-      .then(evolJson => {
-        let evolutionId = parseInt(evolJson.chain.evolves_to[0].evolves_to[0].species.url.charAt(42).split(''))
-      })
-
     })
   }
 
@@ -56,16 +47,18 @@ class PokemonCard extends React.Component {
 
   }
 
+
+
   render () {
     const getImage = require(`../../sprites/sprites/pokemon/${this.props.location.state.id}.png`)
     console.log('After comp', this.props)
     return (
       <div className="pokemon-container">
         <div className="pokedex">
-          <div className="pokedex-image">
-            <div className="">
-              <img src={getImage} alt=""/>
-              <p>
+          <div className="pokedex-image" id={this.props.location.state.type}>
+            <div>
+              <img src={getImage} alt="" className={this.props.match.params.name}/>
+              <p className={this.props.match.params.name}>
                 {this.props.location.state.id}
               </p>
             </div>

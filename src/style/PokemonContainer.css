@@ -198,8 +198,10 @@
 
 .normal {
   border-color: #999;
-  background: url('https://i.imgur.com/8zOuRjc.gif') no-repeat;
+  background: url('https://i.imgur.com/zalotTZ.gif') no-repeat;
   background-size: cover;
+  background-position: 0px -30px;
+  background-color: #dcdc9c;
   /* transform: scaleX(-1);
   filter: flipH; */
 }

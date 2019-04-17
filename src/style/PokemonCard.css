@@ -23,15 +23,67 @@
   background-size: cover;
 }
 
+#fire {
+  background: url('https://i.imgur.com/O3VIwQd.gif') no-repeat;
+  background-size: cover;
+}
+
+#water {
+  background: url('https://i.imgur.com/Uq4eCYK.gif') no-repeat;
+  background-size: cover;
+}
+
+#bug {
+  background: url('https://i.imgur.com/TCM186V.gif') no-repeat;
+  background-size: cover;
+}
+
+#normal {
+  background: url('https://i.imgur.com/zalotTZ.gif') no-repeat;
+  background-size: cover;
+  background-position: 0px -45px;
+  background-color: #dcdc9c;
+}
+
+#poison {
+  background: url('https://i.imgur.com/8SpriMv.gif') no-repeat;
+  background-size: cover;
+}
+
+#electric {
+  background: url('https://i.imgur.com/sU48KBj.gif') no-repeat;
+  background-size: cover;
+}
+
+#ground, #fighting, #rock {
+  background: url('https://i.imgur.com/z9Lz17l.png') no-repeat;
+  background-size: cover;
+}
+
+#psychic {
+  background: url('https://i.imgur.com/MnN9NH4.gif') no-repeat;
+  background-size: cover;
+}
+
+#ghost {
+  background: url('https://i.imgur.com/csjOSAL.gif') no-repeat;
+  background-size: cover;
+}
+
+#ice {
+  background: url('https://i.imgur.com/tvOS2fo.gif') no-repeat;
+  background-size: cover;
+}
+
 .pokedex-image img {
   width: 230px;
   height: 230px;
-  padding-top: 35px;
+  padding-top: 25px;
+  margin-bottom: 136px;
 }
 
 .pokedex-image p {
-  margin-top: 126px;
-  margin-right: 31px;
+  margin: 0 31px 0 0;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
   font-size: 1.3em;
@@ -56,4 +108,33 @@
 
 .pokedex-info-elements {
   padding: 0 40px 0 70px;
+}
+
+
+img.bellsprout, img.tangela, img.rattata, img.spearow, img.eevee, img.ditto {
+  margin-top: 20px;
+}
+
+p.bellsprout, p.tangela, p.rattata, p.spearow, p.eevee, p.ditto {
+  margin-top: -20px;
+}
+
+img.bulbasaur, img.porygon {
+  margin-top: 25px;
+}
+
+p.bulbasaur, p.porygon {
+  margin-top: -25px;
+}
+
+img.exeggcute {
+  margin-top: 30px;
+}
+
+p.exeggcute {
+  margin-top: -30px;
+}
+
+.weepinbell {
+  margin-left: 30px;
 }
