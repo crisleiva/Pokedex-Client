@@ -4,8 +4,8 @@
 
 #banner {
   border-bottom: 3px solid #000;
-  background-color: #87ab74;
-  /* background-image: linear-gradient(#fff, #d84331); */
+  /* background-color: #87ab74; */
+  background-image: linear-gradient(#87ab74, #87ab74, #6b9150, #74955c);
 }
 
 #banner img {
