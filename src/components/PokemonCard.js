@@ -11,9 +11,9 @@ class PokemonCard extends React.Component {
   state = {
     pokeHabitat: '',
     enFlavor: '',
-    evolId: 0,
-    pokemons: ''
+    evolId: 0
   }
+
   createPokeCard = (habitat, text) => {
     console.log(habitat, text)
     return (
@@ -37,23 +37,13 @@ class PokemonCard extends React.Component {
       this.setState({
         pokeHabitat,
         enFlavor
-      },() => console.log(parsedJson))
-
-      const pokeUrl = parsedJson.evolution_chain.url
-      fetch(pokeUrl)
-      .then(res => res.json())
-      .then(evolJson => {
-        let evolutionId = parseInt(evolJson.chain.evolves_to[0].evolves_to[0].species.url.charAt(42).split(''))
-      })
-
+      }) 
     })
   }
 
 
-
-  componentDidMount() {
+  componentDidMount = () => {
     this.handleUserPoke()
-
   }
 
   render () {
