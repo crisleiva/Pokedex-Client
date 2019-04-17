@@ -3,6 +3,8 @@ import PokedexContainer from './containers/PokedexContainer'
 import Signup from './components/Signup'
 import Login from './components/Login'
 import Nav from './components/Nav'
+import Home from './components/Home'
+import Logout from './components/Logout'
 import Footer from './components/Footer'
 import {Route, Switch, withRouter} from 'react-router-dom'
 import './style/App.css'
@@ -83,12 +85,12 @@ class App extends Component {
       <div className='App'>
         <Nav user={this.state.user} handleLogOut={this.handleLogOut}/>
         <Switch>
-      
           <Route exact path={'/pokedex/:name'} component={PokemonCard} />
           <Route path={'/pokedex'} render={() => <PokedexContainer user={this.state.user}/>}/> 
           <Route path={'/signup'} render={() => <Signup sendSignUp={this.sendSignUp}/>}/>
           <Route path={'/login'}  render={() => <Login handleLogin={this.handleLogin}/>}/>
-          <Route path={'/'} render={() => <PokedexContainer user={this.state.user}/>}/>
+          <Route path={'/logout'} render={() => <Logout handleLogOut={this.handleLogOut}/>} />
+          <Route path={'/'} component={Home}/>
         </Switch>
         <Footer />
       </div>

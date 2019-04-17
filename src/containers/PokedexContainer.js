@@ -27,7 +27,6 @@ class PokedexContainer extends React.Component {
   }
 
 
-
   handleChange = (e) => {
     e.preventDefault()
     this.setState({
@@ -36,29 +35,10 @@ class PokedexContainer extends React.Component {
   }
 
   filterPoke = () => {
-    this.state.pokemons.filter(poke => poke.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+    return this.state.pokemons.filter(poke => poke.name.includes(this.state.searchTerm.toLowerCase()))
   }
-  //We're going to implement this after MVP
-  // setUsersPokemon = (pokeObj) => {
-  //   console.log(pokeObj)
-  //   fetch(`http://localhost:3000/users/${this.props.user.id}`, {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //     },
-  //     body: JSON.stringify({
-  //       user: {
-  //         user_pokemons: pokeObj
-  //       }
-  //     })
-  //   })
-  //   .then(res => res.json())
-  //   .then(console.log)
-  // }
 
   render () {
-    console.log('After Render:', this.state.pokemons)
     const banner = <img src='https://i.imgur.com/EWZkHfO.png' alt="Pokemon"/>
     return (
       <div id="pokemon-container">

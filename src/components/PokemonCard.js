@@ -13,6 +13,7 @@ class PokemonCard extends React.Component {
     enFlavor: '',
     evolId: 0
   }
+
   createPokeCard = (habitat, text) => {
     console.log(habitat, text)
     return (
@@ -37,14 +38,13 @@ class PokemonCard extends React.Component {
         pokeHabitat,
         enFlavor
       },() => console.log(parsedJson))
+
     })
   }
 
 
-
-  componentDidMount() {
+  componentDidMount = () => {
     this.handleUserPoke()
-
   }
 
 
