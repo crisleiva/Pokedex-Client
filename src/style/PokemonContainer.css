@@ -62,7 +62,7 @@
 
 .pokemon-cards {
   width: 180px;
-  border-radius: 5px;
+  border-radius: 10px 60px;
   background: url('https://i.imgur.com/RvksFPu.gif') no-repeat  #89b57e;
   background-size: cover;
   transition: .3s;
