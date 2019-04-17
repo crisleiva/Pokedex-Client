@@ -14,6 +14,13 @@ class PokemonCard extends React.Component {
     evolId: 0
   }
 
+  scrollToTop = () => {
+    window.scrollTo(0,180)
+  }
+
+  componentWillMount = () => {
+    this.scrollToTop()
+  }
   createPokeCard = (habitat, text) => {
     console.log(habitat, text)
     return (
