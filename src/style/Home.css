@@ -1,0 +1,18 @@
+.home-card {
+  width: 30%;
+  margin: auto;
+  height: 400px;
+}
+
+.home-card-text-container {
+  padding: 6px 20px 0;
+  height: 130px;
+}
+
+.home-card-text-container:first-child {
+  background-color: #47e;
+}
+
+.home-card-text-container:last-child {
+  background-color: #9bc166;
+}

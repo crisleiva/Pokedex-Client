@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import '../style/Home.css'
 
 const Home = props => {
   return (
-    <div>
+    <div id="pokemon-container">
       <div id="banner">
         <img src="https://i.imgur.com/EWZkHfO.png" alt ="pokemon" />
         <h1>
@@ -21,7 +24,31 @@ const Home = props => {
       </div>
 
       <div id="pokemon-container-cards">
-        <p>Please Sign In</p>
+        <Link to='/signup' className="home-card large">
+          <img src="" alt="" />
+          <div class="home-card-text-container">
+            <h3>
+              Create a New Account
+            </h3>
+            <p>
+              Want to see the pokèdex? Create an account!
+            </p>
+          </div>
+        </Link>
+
+
+          <Link to='/login' className="home-card large">
+            <img src="" alt="" />
+            <div class="home-card-text-container">
+              <h3>
+                Already have an account?
+              </h3>
+              <p>
+                Login here!
+              </p>
+            </div>
+          </Link>
+
       </div>
     </div>
   )
