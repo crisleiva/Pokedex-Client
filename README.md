@@ -15,6 +15,9 @@ https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon
 - (React)[https://github.com/facebook/react] - Framework it was built with.
 - (Sprites)[https://github.com/PokeAPI/sprites] - Sprites used for the site.
 
+
+![alt-text](https://media.giphy.com/media/f9SWrQMvzpNfpUsAHa/giphy.gif) ![alt-text](https://media.giphy.com/media/dxrmHh4zi86bePstyq/giphy.gif) ![alt-text](https://media.giphy.com/media/Tg0IzGOl73op9V1xrS/giphy.gif)
+
 (Demo)[https://www.youtube.com/watch?v=IjUt_GqosqI&feature=youtu.be]
 
 A link to the backend.
