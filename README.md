@@ -12,8 +12,8 @@ You might also need to download these sprites and add them to the sprites folder
 https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon
 
 ### FrontEnd Built With
-- [React][https://github.com/facebook/react] - Framework it was built with.
-- [Sprites][https://github.com/PokeAPI/sprites] - Sprites used for the site.
+- [React](https://github.com/facebook/react) - Framework it was built with.
+- [Sprites](https://github.com/PokeAPI/sprites) - Sprites used for the site.
 
 
 ![alt-text](https://media.giphy.com/media/f9SWrQMvzpNfpUsAHa/giphy.gif) ![alt-text](https://media.giphy.com/media/dxrmHh4zi86bePstyq/giphy.gif) ![alt-text](https://media.giphy.com/media/Tg0IzGOl73op9V1xrS/giphy.gif)
